@@ -1,0 +1,36 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Poetry
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+      - name: Cache deps
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            .venv
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/poetry.lock') }}
+      - name: Install deps
+        run: poetry install --no-interaction --no-ansi
+      - name: Lint
+        run: |
+          pip install ruff black
+          ruff check .
+          black --check .
+      - name: Tests
+        run: |
+          pip install pytest
+          pytest -q

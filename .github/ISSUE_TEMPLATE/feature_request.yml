@@ -1,0 +1,16 @@
+name: Feature request
+labels: [enhancement]
+title: "feat: <short>"
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What and why?
+      placeholder: Describe the user story and outcomes
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & risks
