@@ -148,7 +148,7 @@ Fintech & distributed systems · High‑throughput APIs · Secure, observable se
 
 ## Contact
 
-- Email: mailto: andie.89@icloud.com · LinkedIn: https://www.linkedin.com/in/andrew-adu-01276781 ·
+- Email: andie.89@icloud.com · LinkedIn: https://www.linkedin.com/in/andrew-adu-01276781 ·
   Portfolio: https://builtbyandie.dev
 
 <sub>Last updated: **Aug 14, 2025**</sub>
