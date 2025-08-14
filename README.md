@@ -154,7 +154,3 @@ Fintech & distributed systems · High‑throughput APIs · Secure, observable se
 <sub>Last updated: **Aug 14, 2025**</sub>
 
 ---
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=andrewadu&show_icons=true&include_all_commits=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=andrewadu&layout=compact" height="165"/>
-</p>
