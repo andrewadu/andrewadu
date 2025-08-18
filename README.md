@@ -44,9 +44,6 @@ Fintech & distributed systems · High‑throughput APIs · Secure, observable se
 
 ## Highlights (projects to pin)
 
-> Replace the links below with your real repos, then pin them on your profile (📌). Keep README files crisp and
-> outcome‑focused.
-
 ### 1) Distributed Payments Platform (📌)
 
 **Stack:** Python · Django · PostgreSQL · Redis · Django‑Q2 · Nginx/Gunicorn
