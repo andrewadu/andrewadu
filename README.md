@@ -1,153 +1,164 @@
-<!--
-Replace the placeholders before publishing:
-- YOUR_EMAIL → contact email (optional)
-- YOUR_LINKEDIN → full LinkedIn URL (optional)
--->
+# Andrew Adu — Backend Engineer · DevOps/SRE · Data Systems
 
-# andie adu — Backend Engineer · DevOps/SRE · Database Specialist
+Fintech & distributed systems • High-throughput APIs • Secure, observable services
 
-Fintech & distributed systems · High‑throughput APIs · Secure, observable services
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrew-adu-01276781/)
-[![Email](https://img.shields.io/badge/Email-Contact-informational?logo=gmail&logoColor=white)](mailto:andie.89@icloud.com)
-[![Website](https://img.shields.io/badge/Website-Portfolio-success?logo=google-chrome&logoColor=white)](https://builtbyandie.dev)
+
+
 
 ---
 
-## About me
+## What I do
 
-- Backend engineer with strong DevOps/SRE habits and a database background (PostgreSQL, MSSQL, MySQL, Redis).
-- Build and operate payment & revenue collection systems, inventory and map‑aware apps (PostGIS), and high‑reliability
-  APIs.
-- Comfortable on bare‑metal/VPS as well as cloud (AWS · Azure · GCP). CI/CD with GitHub Actions.
-- Pragmatic, security‑minded (MFA, RBAC, audit trails) with deep care for logs, metrics and tracing (Sentry, New Relic).
-- Recent wins: reduced a critical workflow from **3+ minutes → ~50 seconds**; supported daily volumes of **100k+**
-  transactions/log events.
+I build and run backend systems where correctness, uptime, and auditability matter.
 
-## What I’m focusing on
+- **Backend + databases:** PostgreSQL (incl. PostGIS), MSSQL, MySQL, Redis, MongoDB
+- **Reliability mindset:** logs/metrics/traces, incident playbooks, least-privilege access, audit trails
+- **Delivery:** CI/CD with GitHub Actions, Dockerized services, Nginx + Gunicorn (Unix sockets), systemd on VPS/bare-metal and cloud
 
-- **Payments**: resilient ledgers, idempotency, reconciliation, AML/CFT and PCI considerations.
-- **Django @ scale**: async views where useful, DB‑first performance (indexes, partitions, materialized views), caching.
-- **Ops**: predictable deploys, GitOps‑y workflows, least‑privilege infra, incident response playbooks.
+**Recent wins**
 
-## Tech I use day‑to‑day
-
-**Languages:** Python, SQL, Bash, Go (learning)
-
-**Frameworks:** Django, FastAPI, Lumen (PHP), Sanic, Flask
-
-**Data:** PostgreSQL (+ PostGIS), MSSQL, MySQL, MongoDB, Redis
-
-**Infra/Tools:** Linux, Nginx, Gunicorn (Unix sockets), Systemd, Docker, GitHub Actions, Poetry, New Relic, Sentry
+- Monitored and reported events, voter turnout, and vote results from **333 polling stations** for the New Patriotic Party (Ghana) **Presidential Primaries (Jan 31, 2026)**
+- Deployed Lotto ERP across **2,000+** point-of-sale (POS) terminals
+- Reduced a critical workflow from **3+ minutes → \~50 seconds**
+- Supported daily volumes of **100k+** transactions/log events
 
 ---
 
-## Highlights (projects to pin)
+## Current focus
 
-### 1) Distributed Payments Platform (📌)
-
-**Stack:** Python · Django · PostgreSQL · Redis · Django‑Q2 · Nginx/Gunicorn
-
-- Idempotent payment flows · reversible transactions · audit‑grade logging
-- KYC/KYB hooks · compliance flags · dispute/reversal workflows
-- CI/CD with GitHub Actions; environment‑specific settings
-
-**Repo:** Private (case study on request)
+- **Microservices at scale:** service boundaries, contracts, versioning, resiliency patterns, and safe rollouts
+- **Big data analysis & reporting infrastructure:** event pipelines, OLTP→OLAP flows, fast dashboards, and operational analytics
+- **Payments:** ledgers, idempotency, reconciliation, reversals, dispute workflows, AML/CFT and PCI considerations
+- **Django at scale:** DB-first performance (indexes, partitions, materialized views), caching, async where it helps
+- **Operations:** predictable deploys, GitOps-style workflows, least-privilege infra, observability (New Relic/Sentry)
 
 ---
 
-### 2) Inventory & Storekeeping (📌)
+## Toolkit
 
-**Stack:** Django · PostgreSQL · Celery/Queues · DRF
+**Languages:** Python • SQL • Bash • Go (learning)
 
-- Multi‑warehouse, batch/lot, movement ledger
-- Low‑stock alerts; supplier and purchase orders
+**Frameworks:** Django • FastAPI • Sanic • Flask
 
-**Repo:** Private (case study on request)
+**Data:** PostgreSQL (+ PostGIS) • TimescaleDB • MSSQL • MySQL • MongoDB • Redis • ClickHouse
 
----
+**Event streaming & queues:** Kafka • RabbitMQ • NATS (JetStream) • Redis Streams
 
-### 3) USSD Lottery Staking with MoMo (📌)
+**Infra/Tools:** $1
 
-**Stack:** Django/FastAPI · PostgreSQL · Redis
-
-- USSD short‑code flows for staking
-- Mobile money (MoMo) integration; tokenised payments; idempotent debits
-- Per‑partner branding for media organizations; rate limits; audit logs
-
-**Repo:** Private (case study on request)
+**AI dev tools:** Cursor • GitHub Copilot • OpenAI Codex • ChatGPT • Continue.dev
 
 ---
 
-### 4) Election Monitoring Platform (📌)
+## Selected work (projects to pin)
 
-**Stack:** Django · Channels/WebSockets · PostgreSQL · Redis · PostGIS (optional)
+> Most of my production work is private; I can share a short case study on request.
 
+### Election Intelligence & Ops (Canvas)
+
+**Stack:** Kafka • Postgres • ClickHouse • Django • Redis • Nginx • Ubuntu • Python
+
+- Election management system
 - Realtime voter turnout dashboard and statistics
 - GOTV tools (broadcasts/targeted nudges) and exit‑poll collection
+- Voter survey and analytics
 - Heatmaps & constituency overlays; observer/incident reports
+- Voter canvassing with sentiment analysis
+- D-day event monitoring with mapped data and geo-location tracking
+- Collation and voter results verification
 
-**Repo:** Private (case study on request)
+**Use case (scenario):** New Patriotic Party (Ghana) — Presidential Primary Election 2026
+
+### Lotto ERP
+
+**Stack:** Postgres • TimescaleDB • Django-Ninja-Extra • Django • Redis
+
+- Support point-of-sale (POS) terminal setups
+- Flexible jackpot game configuration
+- Flexible fixed-odds game configuration
+- Flexible game customization (Keno, etc.)
+- Retailer wallet management
+- Configurable retailer sale rewards structure
+- USSD game extension for retailers and players
+- Web game extension for arcade games
+- Telegram bot for retailers and players’ stakes
+- Flexible multi-fintech integration
+
+### Clinexus
+
+**Stack:** Postgres • Django • Django-Ninja-Extra • Redis • Kafka • ClickHouse • Nginx • Ubuntu • Python
+
+- Backbone of healthcare infrastructure
+- Patient queue
+- Payment integration
+- Analytics and outbreak monitors
+- Imaging and lab
+- Ancillary visits
+- Pharmacy
+- Inventory management
+- FHIR compliant
+
+### Public Procurement Authority Supplier Management Portal
+
+**Stack:** Django • Postgres • Django-Ninja-Extra
+
+- Supplier data management
+- Supplier subscription management
+- Backoffice portal for approval, document validation, etc.
+- Analytic dashboard for management
+
+
+### Distributed Payment System (Private)
+
+**Stack:** Python • Django • PostgreSQL • Redis • Django-Q2 • Nginx/Gunicorn
+
+- Idempotent payment flows, reversible transactions, audit-grade logging
+- KYC/KYB hooks, compliance flags, dispute/reversal workflows
+- CI/CD and environment-specific configuration
+
+### Inventory & Storekeeping (Private)
+
+**Django · PostgreSQL**
+
+- Multi-warehouse, batch/lot tracking, stock movement ledger
+- Low-stock alerts, suppliers, purchase orders
+
+### USSD Lottery Staking + MoMo (Private)
+
+**Django/FastAPI · PostgreSQL · Redis**
+
+- USSD flows for staking; MoMo integration with tokenized, idempotent debits
+- Per-partner branding, rate limiting, audit logging
+
+### Commission & Payouts Engine (Private)
+
+**Django · PostgreSQL**
+
+- Commission rules engine (tiers, windows, exceptions) with reconciliation
+- Scheduled payouts, statements, dispute workflows
+
+### Shipmate (Public)
+
+**Python · Docker · GitHub Actions**
+
+- Release/deploy automation for Django/API services (tagging, changelog, build & push)
+- Rollback playbook, health checks, environment-specific configs
 
 ---
 
-### 5) Commission & Payouts for Lottery Marketing Companies (📌)
+## Open-source & learning
 
-**Stack:** Django · PostgreSQL · Celery/Queues
-
-- Commission rules engine (tiers, time windows, exceptions) with reconciliation
-- Scheduled payouts, transactional statements, and dispute workflows
-
-**Repo:** Private (case study on request)
+- Using **Django Q2** and contributing small fixes where possible
+- Exploring **Go** for high-concurrency services and CLIs
 
 ---
-
-### 6) Map/Geo Sample with PostGIS (📌)
-
-**Stack:** Django · PostGIS
-
-- `geography=True` usage examples, spatial indexes, distance queries, tile caching notes
-
-**Repo:** Private (case study on request)
-
----
-
-### 7) Telegram WebApp + Django starter (📌)
-
-**Stack:** Django · DRF · Telegram Web Apps
-
-- Inline keyboards + web‑app flows, session store patterns, enum/stack‑based navigation
-
-**Repo:** Private (case study on request)
-
----
-
-### 8) Shipmate (📌)
-
-**Stack:** Python · GitHub Actions · Docker
-
-- Release & deploy automation for Django/API services (tagging, changelog, image build & push)
-- Rollback playbook, health checks, and environment‑specific configs
-
-**Repo:** https://github.com/andrewadu/shipmate
-
----
-
-## Open‑source & learning
-
-- Using **Django Q2**, reporting issues and small patches where possible.
-- Exploring **Go** for high‑concurrency services and CLIs.
-
-## Writing
-
-- Google Cloud Fundamentals – Core Infrastructure (notes & quiz prompts).
-- Incident checklists and postmortem template.
 
 ## Contact
 
-- Email: andie.89@icloud.com · LinkedIn: https://www.linkedin.com/in/andrew-adu-01276781 ·
-  Portfolio: https://builtbyandie.dev
+- **Email:** [andie.89@icloud.com](mailto\:andie.89@icloud.com)
+- **LinkedIn:** [https://www.linkedin.com/in/andrew-adu-01276781](https://www.linkedin.com/in/andrew-adu-01276781)
+- **Portfolio:** [https://builtbyandie.dev](https://builtbyandie.dev)
 
-<sub>Last updated: **Aug 14, 2025**</sub>
+Last updated: **Feb 16, 2026**
 
----
