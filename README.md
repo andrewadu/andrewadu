@@ -1,20 +1,33 @@
-# Andrew Adu — Backend Engineer · DevOps/SRE · Data Systems
+# Andrew Adu (Andie Adu) — Backend Engineer · DevOps/SRE · Data Systems
 
 Fintech & distributed systems • High-throughput APIs • Secure, observable services
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrew-adu/)
-[![Email](https://img.shields.io/badge/Email-Contact-informational?logo=gmail&logoColor=white)](mailto:andie.89@icloud.com)
-[![Website](https://img.shields.io/badge/Website-Portfolio-success?logo=google-chrome&logoColor=white)](https://builtbyandie.dev)
+---
+
+## What I do
+
+I build and run backend systems where correctness, uptime, and auditability matter.
+
+- **Backend + databases:** PostgreSQL (incl. PostGIS), MSSQL, MySQL, Redis, MongoDB
+- **Reliability mindset:** logs/metrics/traces, incident playbooks, least-privilege access, audit trails
+- **Delivery:** CI/CD with GitHub Actions, Dockerized services, Nginx + Gunicorn (Unix sockets), systemd on VPS/bare-metal and cloud
+
+**Recent wins**
+
+- Monitored and reported events, voter turnout, and vote results from **333 polling stations** for the New Patriotic Party (Ghana) **Presidential Primaries (Jan 31, 2026)**.
+- Deployed Lotto ERP across **2,000+** point-of-sale (POS) terminals.
+- Reduced a critical workflow from **3+ minutes → \~50 seconds**.
+- Supported daily volumes of **100k+** transactions/log events.
 
 ---
 
 ## Current focus
 
-- **Microservices at scale:** service boundaries, contracts, versioning, resiliency patterns, and safe rollouts
-- **Big data analysis & reporting infrastructure:** event pipelines, OLTP→OLAP flows, fast dashboards, and operational analytics
-- **Payments:** ledgers, idempotency, reconciliation, reversals, dispute workflows, AML/CFT and PCI considerations
-- **Django at scale:** DB-first performance (indexes, partitions, materialized views), caching, async where it helps
-- **Operations:** predictable deploys, GitOps-style workflows, least-privilege infra, observability (New Relic/Sentry)
+- **Microservices at scale:** service boundaries, contracts, versioning, resiliency patterns, and safe rollouts.
+- **Big data analysis & reporting infrastructure:** event pipelines, OLTP→OLAP flows, fast dashboards, and operational analytics.
+- **Payments:** ledgers, idempotency, reconciliation, reversals, dispute workflows, AML/CFT and PCI considerations.
+- **Django at scale:** DB-first performance (indexes, partitions, materialized views), caching, async where it helps.
+- **Operations:** predictable deploys, GitOps-style workflows, least-privilege infra, observability (New Relic/Sentry).
 
 ---
 
@@ -22,7 +35,7 @@ Fintech & distributed systems • High-throughput APIs • Secure, observable se
 
 **Languages:** Python • SQL • Bash • Go (learning)
 
-**Frameworks:** Django • FastAPI • Sanic • Flask
+**Frameworks:** Django • FastAPI • Sanic • Flask • Django-Ninja-Extra
 
 **Data:** PostgreSQL (+ PostGIS) • TimescaleDB • MSSQL • MySQL • MongoDB • Redis • ClickHouse
 
@@ -42,14 +55,14 @@ Fintech & distributed systems • High-throughput APIs • Secure, observable se
 
 **Stack:** Kafka • Postgres • ClickHouse • Django • Redis • Nginx • Ubuntu • Python
 
-- Election management system
-- Real-time voter turnout dashboard and statistics
-- GOTV tools (broadcasts/targeted nudges) and exit‑poll collection
-- Voter survey and analytics
-- Heatmaps & constituency overlays; observer/incident reports
-- Voter canvassing with sentiment analysis
-- D-Day event monitoring with mapped data and geolocation tracking
-- Collation and voter results verification
+- Runs an election management system for polling-station onboarding, roles, workflows, and audit trails.
+- Provides a real-time turnout dashboard with polling-station rollups and anomaly flags.
+- Supports GOTV broadcasts and targeted nudges, plus structured exit-poll collection in the field.
+- Captures voter surveys and produces analytics for segmentation, trends, and performance tracking.
+- Generates heatmaps and constituency overlays, with observer and incident reporting (notes, photos, and timestamps).
+- Enables canvassing workflows with sentiment analysis on responses and field notes.
+- Monitors D-Day operations on a live map with geolocation tracking and time-based event logs.
+- Handles collation workflows and vote-result verification with reconciliation against station submissions.
 
 **Use case (scenario):** New Patriotic Party (Ghana) — Presidential Primary Election 2026
 
@@ -57,92 +70,91 @@ Fintech & distributed systems • High-throughput APIs • Secure, observable se
 
 **Stack:** Postgres • TimescaleDB • Django-Ninja-Extra • Django • Redis
 
-- Support point-of-sale (POS) terminal setups
-- Flexible jackpot game configuration
-- Flexible fixed-odds game configuration
-- Flexible game customization (Keno, etc.)
-- Retailer wallet management
-- Configurable retailer sale rewards structure
-- USSD game extension for retailers and players
-- Web game extension for arcade games
-- Telegram bot for retailers and players’ stakes
-- Flexible multi-fintech integration
+- Supports POS terminal onboarding, device provisioning, and outlet-level configuration.
+- Configures jackpot games with flexible rules, schedules, and payout parameters.
+- Runs fixed-odds games with configurable markets, odds tables, and settlement rules.
+- Enables custom game templates (Keno and more) with per-product branding and rule sets.
+- Manages retailer wallets (float, commissions, settlements) with full ledgering and statements.
+- Implements configurable retailer sales rewards (tiers, thresholds, campaigns) with transparent reporting.
+- Extends gameplay via USSD for retailers and players with session-safe, resilient flows.
+- Adds a web channel for arcade-style games with secure stake, payout, and account handling.
+- Provides a Telegram bot for retailer and player stakes, notifications, and balance checks.
+- Integrates multiple fintech providers through a pluggable adapter layer with routing and failover.
 
 ### Clinexus
 
 **Stack:** Postgres • Django • Django-Ninja-Extra • Redis • Kafka • ClickHouse • Nginx • Ubuntu • Python
 
-- Backbone of healthcare infrastructure
-- Patient queue
-- Payment integration
-- Analytics and outbreak monitors
-- Imaging and lab
-- Ancillary visits
-- Pharmacy
-- Inventory management
-- CDC code integration
+- Serves as the backbone of a healthcare infrastructure platform, connecting clinical and operational workflows.
+- Manages patient queueing end-to-end (triage, routing, and visit states) across facilities.
+- Integrates payments for visits, services, and pharmacy with reconciliation and receipts.
+- Delivers analytics and outbreak surveillance dashboards for management and public health.
+- Supports imaging and lab workflows, including orders, results, and attachments.
+- Tracks ancillary visits as structured encounters (vitals, nursing notes, procedures, follow-ups).
+- Runs pharmacy operations for dispensing, pricing, and stock-linked fulfillment.
+- Provides inventory management across stores and departments with stock movement history.
+- Is FHIR-compliant for interoperability and includes CDC code integration.
 
 ### Public Procurement Authority Supplier Management Portal
 
 **Stack:** Django • Postgres • Django-Ninja-Extra
 
-**Link:** https://suppliers.ppa.gov.gh
+**Link:** [https://suppliers.ppa.gov.gh](https://suppliers.ppa.gov.gh)
 
-- Supplier data management
-- Supplier subscription management
-- Backoffice portal for approval, document validation, etc.
-- Analytic dashboard for management
-
+- Centralizes supplier data management with structured profiles and document records.
+- Manages supplier subscriptions, renewals, and status tracking.
+- Provides a backoffice portal for approvals, validations, and operational workflows.
+- Offers an analytics dashboard for management reporting and oversight.
 
 ### Distributed Payment System (Private)
 
 **Stack:** Python • Django • PostgreSQL • Redis • Django-Q2 • Nginx/Gunicorn
 
-- Idempotent payment flows, reversible transactions, audit-grade logging
-- KYC/KYB hooks, compliance flags, dispute/reversal workflows
-- CI/CD and environment-specific configuration
+- Implements idempotent payment flows, reversible transactions, and audit-grade logging.
+- Supports KYC/KYB hooks, compliance flags, and dispute and reversal workflows.
+- Ships with CI/CD automation and environment-specific configuration.
 
 ### Inventory & Storekeeping (Private)
 
 **Stack:** Django • PostgreSQL
 
-- Multi-warehouse, batch/lot tracking, stock movement ledger
-- Low-stock alerts, suppliers, purchase orders
+- Tracks stock movement as a ledger across warehouses, branches, and transfers.
+- Supports batching and expiry workflows with history and audit trails.
 
 ### USSD Lottery Staking + MoMo (Private)
 
 **Stack:** Django/FastAPI • PostgreSQL • Redis
 
-- USSD flows for staking; MoMo integration with tokenized, idempotent debits
-- Per-partner branding, rate limiting, audit logging
+- Runs USSD staking flows with resilient sessions, retries, and idempotent debits.
+- Integrates MoMo providers with rate limiting, auditing, and per-partner branding.
 
 ### Commission & Payouts Engine (Private)
 
 **Stack:** Django • PostgreSQL
 
-- Commission rules engine (tiers, windows, exceptions) with reconciliation
-- Scheduled payouts, statements, dispute workflows
+- Applies configurable commission rules (tiers, windows, exceptions) with reconciliation.
+- Produces statements and schedules payouts with approval workflows.
 
 ### Shipmate (Public)
 
 **Stack:** Python • Docker • GitHub Actions
 
-- Release/deploy automation for Django/API services (tagging, changelog, build & push)
-- Rollback playbook, health checks, environment-specific configs
+- Automates release and deploy workflows (tagging, changelogs, build and push).
+- Includes rollback playbooks, health checks, and environment-specific configuration.
 
 ---
 
 ## Open-source & learning
 
-- Using **Django Q2** and contributing small fixes where possible
-- Exploring **Go** for high-concurrency services and CLIs
+- Using **Django Q2** and contributing small fixes where possible.
+- Exploring **Go** for high-concurrency services and CLIs.
 
 ---
 
 ## Contact
 
-- **Email:** [andie.89@icloud.com](mailto:andie.89@icloud.com)
-- **LinkedIn:** [https://www.linkedin.com/in/andrew-adu-01276781](https://www.linkedin.com/in/andrew-adu-01276781)
+- **Email:** [andie.89@icloud.com](mailto\:andie.89@icloud.com)
+- **LinkedIn:** [https://www.linkedin.com/in/andrew-adu/](https://www.linkedin.com/in/andrew-adu/)
 - **Portfolio:** [https://builtbyandie.dev](https://builtbyandie.dev)
 
 Last updated: **Feb 16, 2026**
