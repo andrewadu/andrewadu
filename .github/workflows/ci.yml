@@ -32,6 +32,11 @@ jobs:
               "Frontend engineering",
               "AI-enabled engineering",
               "Owner-reported production outcomes",
+              "90% of polling stations",
+              "8,000 peak connected terminals",
+              "95% of requests completing in under one second",
+              "200M+ legacy supplier records",
+              "GHS 400M+ in collections",
           ]
           missing = [value for value in required if value not in text]
           assert not missing, f"Missing required profile content: {missing}"

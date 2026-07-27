@@ -8,10 +8,10 @@ I build and lead reliable, data-heavy systems where correctness, throughput, and
 
 ## Owner-reported production outcomes
 
-- **333 polling stations** reported results within 45 minutes on an election-intelligence platform.
-- Supported **4,000 peak connected terminals** on a multi-tenant lottery operations platform.
-- Migrated and deduplicated **2M+ legacy supplier records** for a national supplier portal.
-- Built operational systems supporting approximately **GHS 148M in annual collections**.
+- **90% of polling stations** reported results within 45 minutes on an election-intelligence platform.
+- Supported **8,000 peak connected terminals**, with **95% of requests completing in under one second**, on a multi-tenant lottery operations platform.
+- Migrated and deduplicated **200M+ legacy supplier records** for a national supplier portal.
+- Built operational systems supporting **GHS 400M+ in collections**.
 
 ## Engineering range
 
@@ -30,11 +30,11 @@ Technical lead for a field-operations platform coordinating more than 1,300 user
 
 ### Multi-tenant Lotto ERP
 
-Backend engineer and SRE for a high-throughput platform spanning POS ticketing, retailer wallets, configurable games, commissions, settlement, and payment integrations. Typical responses remained under two seconds at a peak of 4,000 connected terminals.
+Backend engineer and SRE for a high-throughput platform spanning POS ticketing, retailer wallets, configurable games, commissions, settlement, and payment integrations. The platform reached 8,000 peak connected terminals while 95% of requests completed in under one second.
 
 ### PPA Supplier Portal
 
-Technical lead for Ghana's Public Procurement Authority supplier portal, covering onboarding, subscriptions, payment, internal review, migration, and digital certification for more than 67,000 suppliers.
+Technical lead for Ghana's Public Procurement Authority supplier portal, covering onboarding, subscriptions, payment, internal review, migration, and digital certification for more than 67,000 suppliers, including the migration and deduplication of 200M+ legacy records.
 
 ## How I work
 
